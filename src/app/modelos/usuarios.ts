@@ -1,5 +1,5 @@
 export class Usuario {
-    _num_sec?: number;
+    num_sec?: number;
     nombre: string;
     apPaterno: string;
     apMaterno: string;

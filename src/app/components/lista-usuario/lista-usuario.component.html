@@ -14,7 +14,6 @@
                           <th scope="col">DOC IDENTIDAD</th>
                           <th scope="col">FECHA NACIMIENTO</th>
                           <th scope="col">TIPO USUARIO</th>
-                          <th scope="col">ESTADO</th>
                           <th scope="col"></th>
                         </tr>
                       </thead>
@@ -26,10 +25,9 @@
                           <td>{{ usuario.docIdentidad }}</td>
                           <td>{{ usuario.fechaNac }}</td>
                           <td>{{ usuario.tipo_usuario }}</td>
-                          <td>{{ usuario.estado }}</td>
                           <td>
-                              <i [routerLink]="['/editar-producto', usuario._num_sec]" class="fas fa-edit text-primary"></i>
-                              <i (click)="eliminarUsuario(usuario._num_sec)" class="fas fa-trash text-danger"></i>
+                              <i class="fas fa-edit text-primary"></i>
+                              <i class="fas fa-trash text-danger"></i>
                           </td>
                         </tr>
                       </tbody>

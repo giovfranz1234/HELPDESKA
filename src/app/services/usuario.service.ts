@@ -14,7 +14,7 @@ export class UsuarioService {
     getUsuarios(): Observable<any>{
       return this.http.get(this.url);
   }
-  eliminarUsuario(num_sec: string): Observable<any> {
+  eliminarUsuario(num_sec: number): Observable<any> {
     return this.http.delete(this.url + num_sec);
-  }
+  };
 }
